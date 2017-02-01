@@ -31,4 +31,4 @@ docker build -t hello-docker .
 docker run hello-docker
 ````
 
-If all goes well, you should see the text "Hello Docker!" printed to the console window.
+If all goes well, you should see the text "Hello Docker!" printed to the terminal window.
