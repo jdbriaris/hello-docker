@@ -12,20 +12,20 @@ Open a terminal and clone this repository to your development machine
 git clone https://github.com/jdbriaris/hello-docker/
 ````
 
-Restore, build and publish the .NET Core application ensuring the build is published to a directory called `out`
+[Restore](https://docs.microsoft.com/en-us/dotnet/articles/core/tools/dotnet-restore), [build](https://docs.microsoft.com/en-us/dotnet/articles/core/tools/dotnet-build) and [publish](https://docs.microsoft.com/en-us/dotnet/articles/core/tools/dotnet-publish) the .NET Core application ensuring the build is published to a directory called `out`
 
 ````
 dotnet restore
 dotnet publish -c Release -o out
 ````
 
-Build the docker image based on the `Dockerfile`
+[Build](https://docs.docker.com/engine/reference/commandline/build/) the docker image based on the `Dockerfile`
 
 ````
 docker build -t hello-docker .
 ````
 
-Run the docker image in a docker container
+[Run](https://docs.docker.com/engine/reference/run/) the docker image in a docker container
 
 ````
 docker run hello-docker
